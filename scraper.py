@@ -70,7 +70,7 @@ while(keepRunning):
     else:
         break
 
-with open("scholarships.txt", "w") as f:
+with open("scholarships.txt", "w", encoding="utf-8") as f:
     for s in scholarships:
         f.write(s.name + "\n" + s.desc + "\n\n")
 
